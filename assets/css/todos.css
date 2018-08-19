@@ -1,8 +1,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #8360c3;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #7F7FD5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
@@ -62,15 +62,16 @@ span {
 	transition: 0.2s linear;
 }
 
+span i {
+	font-size: 0;
+}
+
 li:hover span {
 	width: 40px;
 }
 
-#container {
-	width: 360px;
-	margin: 100px auto;
-	background: #f7f7f7;
-	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+li:hover span i {
+	font-size: 16px;
 }
 
 .fa-plus {
@@ -80,4 +81,11 @@ li:hover span {
 .completed {
 	color: gray;
 	text-decoration: line-through;
+}
+
+#container {
+	width: 360px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
 }
